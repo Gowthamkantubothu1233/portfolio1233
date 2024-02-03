@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Page</title>
+    <script>
+        function validateRegistration() {
+        var name = document.getElementById('name').value;
+        if (!/^[a-zA-Z]{3,}$/.test(name)) {
+            alert('Name should contain alphabets only and be at least 6 characters long.');
+            return false;
+        }
+
+        var password = document.getElementById('password').value;
+        if (password.length < 6) {
+            alert('Password should be at least 6 characters long.');
+            return false;
+        }
+
+        var email = document.getElementById('email').value;
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            alert('Invalid email format.');
+            return false;
+        }
+
+        var phoneNumber = document.getElementById('phone').value;
+        if (!/^\d{10}$/.test(phoneNumber)) {
+            alert('Phone number should contain 10 digits only.');
+            return false;
+        }
+
+        alert('Registration successful!');
+        return true;
+        }
+    </script>
+    <style>
+        body
+        {
+            background-color: black;
+            color: white;
+            margin-top: 150px;
+        }
+        *
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+  </head>
+<body align="center">
+  <h2>Registration Page</h2>
+  <form onsubmit="return validateRegistration()">
+    <table align="center" cellspacing="20">
+        <tr>
+            <td>
+                <label for="name">Name:</label>
+            </td>
+            <td>
+                <input type="text" id="name" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="password">Password:</label>
+            </td>
+            <td>
+                <input type="password" id="password" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">Email:</label>
+            </td>
+            <td>
+                <input type="email" id="email" required><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="phone">Phone Number:</label>
+            </td>
+            <td>
+                <input type="tel" id="phone" required>
+            </td>
+        </tr>
+        <tr >
+            <td  colspan="2">
+                <input type="submit" value="Register">
+            </td>
+        </tr>
+    </table>
+  </form>
+</body>
+</html>

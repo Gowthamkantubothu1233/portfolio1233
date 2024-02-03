@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body
+            {
+                background-color: black;
+                color: white;
+            }
+            *
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+            }
+            button:hover
+            {
+                background-color: black;
+                color:white;
+            }
+            input
+        {
+            margin-left:-10px;
+            padding:10px;
+            border-radius:10px ;
+            border-color:#fff;
+            margin-top:10px;
+            width:100%; 
+      
+        }
+        </style>
+    </head>
+        <body>
+            <form action="">
+            <h1 align="center" font text=""><u>REGISTRATION FORM </u></h1>
+            <table align="center" cellspacing="25">
+                <tr>
+                    <td>
+                        <label for=FIRSTNAME>FIRSTNAME<sup style="color: red;">*</sup>:</label>
+                        
+                    </td>
+                    <td>
+                        <input placeholder="Firstname" id="Firstname" required type="text">
+                    </td>
+                    <td>
+                        <label for="HTNO">HALLTICKETNO<sup style="color: red;">*</sup>:</label>
+                    </td>
+                    <td>
+                        <input placeholder="HallticketNo" id="HALLTICKETNO" required type="number,character" main=10></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="LASTNAME">LASTNAME<sup style="color: red;">*</sup>:</label><td>
+                        <input placeholder="Lastname" id="lastname" required type="text"></td></td>
+                    <td>
+                        <label for="DATE OF BIRTH">DATE OF BIRTH<sup style="color: red;">*</sup>:</label><td>
+                        <input type="date" name="date" min="1-01-2020" max="1-01-2024"></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="FATHERNAME">FATHERNAME<sup style="color: red;">*</sup>:</label><td>
+                        <input placeholder="Fathername" id="Fathername" required type="text"></td>
+                    </td>
+                    <td>
+                        <label for="MOTHERNAME">MOTHERNAME<sup style="color: red;">*</sup>:</label><td>
+                        <input placeholder="Mothername" id="Mothername" required type="text"></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="PHONE NO">PHONE NO<sup style="color: red;">*</sup>:</label><td>
+                        <input placeholder="Phone no" id="Phone no" required type="number"></td>
+                    </td>
+                    <td>
+                        LANGUAGES KNOWN<sup style="color: red;">*</sup>:
+                        <td>
+                        <label for="Telugu">Telugu</label>
+                        <input type="checkbox" name="Telugu" id="Telugu">
+                        <label for="English">English</label>
+                        <input type="checkbox" name="Telugu" id="Telugu">
+                        <label for="Hindi">Hindi</label>
+                        <input type="checkbox" name="Telugu" id="Telugu">
+                        </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="DATE OF JOINING">DATE OF JOINING<sup style="color: red;">*</sup>:</label><td>
+                        <input type="date" name="date" min="1-0-2000" max="1-0-2024"></td>
+                    </td>
+                    <td>
+                        <label for=BLOOD GROUP>BLOOD GROUP<sup style="color: red;">*</sup>:</label>
+                    </td>
+                    <td>  <select >
+                        <option>Blood Group</option>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>
+                        SELECT GENDER<sup style="color: red;">*</sup>:
+                        <td>
+                        <label for="Male">Male</label>
+                        <input type="radio" name="Gender" id="Male" value="Male">
+                        <label for="Female">Female</label>
+                        <input type="radio" name="Gender" id="Female" value="Female">
+                        </td>
+                    </td>
+                    <td>
+                        <label for=BRANCH>BRANCH<sup style="color: red;">*</sup>:</label>
+                        
+                    </td>
+                    <td>
+                        <select>
+                            <option>select branch</option>
+                            <option>CSE</option>
+                            <option>IT</option>
+                            <option>EEE</option>
+                            <option>MECH</option>
+                            <option>ECE</option>
+                            <option>CIVIL</option>
+                            <option>CSD</option>
+                            <option>CSM</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td align="right"><button>RESET</button></td>
+                    <td><button>SUBMIT</button></td>
+                    <td> </td>
+                </tr>
+            </table>
+        </form>
+        </body>
+    
+</html>

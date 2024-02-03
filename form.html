@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form action="/action_page.php" >
+    <fieldset>
+        <div>
+            <label for="name">User Nmae</label>
+            <input type="text" name="name" id="name" placeholder="enter the username" size="30" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="enter the Proper password" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="enter the email_id" required>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="5" max="70" step="5">
+        </div> 
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" min="2000-01-01" max="2024-01-01">
+        </div>
+        <div>
+            SELECT LANGUAGES KNOWN
+        </div>
+        <div>
+            <input type="checkbox" name="Telugu" id="Telugu">
+            <label for="Telugu">Telugu</label>
+        </div>
+        <div>
+            <input type="checkbox" name="English" id="English">
+            <label for="English">English</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Hindi" id="Hindi">
+            <label for="Hindi">Hindi</label>
+        </div>
+        <div>
+            SELECT GENDER
+        </div>
+        <div>
+            <input type="radio" name="gender" id="Male" value="Male">
+            <label for="Male">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="FeMale" value="FeMale">
+            <label for="FeMale">FeMale</label>
+        </div>
+        <button>Reset</button>
+        <button>Submit</button>
+    </fieldset>
+</form>
+</body>
+</html>

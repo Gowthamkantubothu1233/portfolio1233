@@ -1,0 +1,55 @@
+.total_body{
+    background-color: black;
+    color: white;
+    scroll-padding-bottom:unset;
+}
+
+h1{
+    margin-left: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+a
+{
+    color: white;
+    text-decoration: none;
+    margin-right: 100px;
+}
+.home
+{
+    
+    margin-left: 150px;
+}
+.login
+{
+    height: 100vh;
+}
+button:hover
+{
+   background-color: black;
+   color: white;
+
+}
+.registration
+{
+ margin-top:200px;
+ margin-left: 300px;
+ height: 100vh;
+}
+.top1{
+    position: fixed;
+    display: block;
+    background-color: black;
+}
+.branches
+{
+    margin-top: 100px;
+    position: fixed;
+    background-color: black;
+}
+.footer
+{
+    position: fixed;
+    background-color: black;
+    margin-top: 47%;
+}
+.navigation
